@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Terms of Service and Privacy Policy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="w3.css" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif
+    }
+
+    .w3-bar,
+    h1,
+    button {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor,
+    .fa-coffee {
+      font-size: 200px
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-deep-purple w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-deep-purple" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+      <a href="links.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Quick Links</a>
+      <a href="lawlinks.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Law Links</a>
+      <a href="resume-m.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Matt's Resume</a>
+      <a href="resume-k.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Keri's Resume</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="links.html" class="w3-bar-item w3-button w3-padding-large">Quick Links</a>
+      <a href="lawlinks.html" class="w3-bar-item w3-button w3-padding-large">Law Links</a>
+      <a href="resume-m.html" class="w3-bar-item w3-button w3-padding-large">Matt's Resume</a>
+      <a href="resume-k.html" class="w3-bar-item w3-button w3-padding-large">Keri's Resume</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="w3-container w3-deep-purple w3-center">
+    <h1 class="w3-padding-header w3-xxlarge">The Keck Home Page</h1>
+  </header>
+
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-container">
+    <div class="w3-content">
+      <div class="w3-half w3-padding">
+        <h1 class="w3-center w3-padding-32">Terms of Use</h1>
+        <p class="w3-text-gray">Disclaimer (since I am a lawyer!): Nothing in these pages should be construed as legal or financial advice. Unfortunately, I cannot guarentee the accuracy of the links or information that is maintained by third
+          parties, although I do try to keep the links up-to-date.</p>
+        <p class="w3-text-gray">Third parties are granted permission to maintain a link to any of my pages.</p>
+        <p class="w3-text-gray">By using these pages, you expressly agree to be bound by these terms and the laws of the State of Michigan. If there is any choice of law question, the laws of the State of Michigan will be controlling.</p>
+      </div>
+      <div class="w3-half w3-padding">
+        <h1 class="w3-center w3-padding-32">Privacy Policy</h1>
+        <h6>Notice</h6>
+        <p class="w3-text-gray">This website does not collect any information from you unless your choose to release it. Your use of any guestbook will display certain information on the Internet. This information is available to anyone. In addition, the guestbook and page counters are hosted by third parties (www.pollit.com and www.escanti.com). Please visit their websites for more information on their privacy policies. If you send the webmaster your email address it will only be used to respond to your message and will then be discarded. SPECIAL NOTE: All information regarding Albion Alumni from the Reunion page will be shared with Albion College. It will not be used for any other purposes.</p>
+        <h6>Choice</h6>
+        <p class="w3-text-gray">If I ever decide to collect any information, I will let you choose whether or not you want it collected about you. If you do not want me to share information with Albion College, then do NOT give it to me!</p>
+        <h6>Access</h6>
+        <p class="w3-text-gray">Since I do not collect any information, I cannot give you access to it. If you would like to see what information Albion College may have about you, contact the Alumni office.</p>
+        <h6>Security</h6>
+        <p class="w3-text-gray">This website has very little security.  You should really be more concerned about which websites you visit.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <p id="copyright"></p>
+    <p><a href="legals.html">Terms of Use - Privacy Policy</a></p>
+  </footer>
+
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    // Writes the copyright statement with the current year. Website was first deployed in March 2020
+    document.getElementById("copyright").innerHTML = "Copyright " + new Date().getFullYear() + " - All Rights Reserved"
+  </script>
+
+</body>
+
+</html>
