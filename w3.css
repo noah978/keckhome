@@ -2,7 +2,7 @@
  * Edited March 2020 by Noah Keck */
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
