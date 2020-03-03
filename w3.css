@@ -1,7 +1,8 @@
 /* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes
  * Edited March 2020 by Noah Keck */
 html {
-  box-sizing: border-box
+  box-sizing: border-box;
+  scroll-behavior: smooth
 }
 
 *, *:before, *:after {
